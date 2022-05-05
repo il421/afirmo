@@ -1,11 +1,14 @@
 import { FunctionComponent, useState } from "react";
-import { useUserStore } from "../../../stores/userStore";
-import { ActionButton } from "../../../ui-components/buttons/ActionButton";
+import { useUserStore } from "../../../../stores/userStore";
+import { ActionButton } from "../../../../ui-components/buttons/ActionButton";
+import { useDialogsStore } from "../../../../stores/useDialogsStore";
 
-export const EditForm: FunctionComponent = () => {
-  const { user, toggleIsEdit, updateUser } = useUserStore();
+export const UserForm: FunctionComponent = () => {
+  const { updateUser, user } = useUserStore();
+  const { setDialogKey } = useDialogsStore();
   const [firstName, setFirstName] = useState<string>(user?.dto.firstName ?? "");
   const [lastName, setLastName] = useState<string>(user?.dto.lastName ?? "");
+
   return (
     <form className="flex flex-col justify-between h-[100%]">
       <span className="text-white text-lg opacity-100">Your name</span>
@@ -37,10 +40,10 @@ export const EditForm: FunctionComponent = () => {
           }
           onClick={async () => {
             await updateUser(user!.id, { firstName, lastName });
-            toggleIsEdit();
+            setDialogKey(undefined);
           }}
         />
-        <ActionButton text="cancel" onClick={toggleIsEdit} />
+        <ActionButton text="cancel" onClick={() => setDialogKey(undefined)} />
       </div>
     </form>
   );

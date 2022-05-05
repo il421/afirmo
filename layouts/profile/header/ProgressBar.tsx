@@ -9,7 +9,7 @@ export const ProgressBar = () => {
   const { cards } = useRefDataStore();
 
   const completed = completedSections() + completedCompanySections();
-  const completedPercent = getPercent(completed, cards.length).toFixed();
+  const completedPercent = getPercent(completed, cards.length - 2).toFixed();
 
   return (
     <div>

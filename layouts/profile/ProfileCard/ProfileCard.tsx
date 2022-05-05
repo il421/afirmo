@@ -9,7 +9,7 @@ interface ProfileCardProps {
 }
 
 export const ProfileCard: FunctionComponent<ProfileCardProps> = ({
-  card: { data, title }
+  card: { data, title, key }
 }) => {
   const [] = useState();
 
@@ -25,9 +25,9 @@ export const ProfileCard: FunctionComponent<ProfileCardProps> = ({
           tooltip={data.tooltip}
           value={data.value}
         />
-        <ProfileCardBody data={data} />
+        <ProfileCardBody data={data} cardKey={key} />
       </div>
-      <ProfileCardActions data={data} />
+      <ProfileCardActions data={data} cardKey={key} />
     </article>
   );
 };

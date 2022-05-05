@@ -21,7 +21,7 @@ export const Percent = () => {
     >
       <span className="text-white text-2xl font-semibold">{`${getPercent(
         completed,
-        cards.length
+        cards.length - 2
       ).toFixed()}%`}</span>
     </Fallback>
   );
