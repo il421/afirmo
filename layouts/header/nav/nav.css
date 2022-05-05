@@ -1,0 +1,27 @@
+.nav-item {
+    @apply flex
+    items-center
+    self-stretch
+    text-white
+    pr-2
+    pl-2
+    relative
+    after:absolute
+    after:content-['']
+    after:w-full
+    after:h-1.5
+    after:top-[42px]
+    after:bg-white
+    after:opacity-0
+    after:right-0
+    after:transition
+    after:ease-in-out
+    after:delay-150
+}
+
+.nav-item--active {
+    @apply after:opacity-100
+    after:transition
+    after:ease-in-out
+    after:delay-150
+}

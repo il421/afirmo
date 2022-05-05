@@ -1,0 +1,127 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ilyaddd",
+      "lastName": "Suglobov",
+      "dob": "1985-07-06",
+      "companyId": "1",
+      "phoneNumbers": [
+        "0223456789",
+        "022334444"
+      ],
+      "email": "il421@mail.ru",
+      "address": {
+        "street": "Nugget Av.",
+        "suite": "65",
+        "city": "Auckland",
+        "zipcode": "0812"
+      }
+    }
+  ],
+  "companies": [
+    {
+      "id": "1",
+      "logo": "https://nypost.com/wp-content/uploads/sites/2/2018/04/lord_of_the_ring.jpg?quality=75&strip=all&w=744",
+      "trading": "Pet Grooming Ltd.",
+      "business": "Online sales",
+      "bic": "Pet Grooming",
+      "domain": "www.afirmo.com",
+      "nzbn": "122343",
+      "account": "1222-3332-3322-0000",
+      "acc": "3434"
+    }
+  ],
+  "profilesRefData": [
+    {
+      "key": "logo",
+      "title": "your logo",
+      "section": "PD",
+      "order": 0
+    },
+    {
+      "key": "name",
+      "title": "your name",
+      "section": "PD",
+      "order": 1
+    },
+    {
+      "key": "address",
+      "title": "your address",
+      "section": "PD",
+      "order": 2
+    },
+    {
+      "key": "db",
+      "title": "date of birth",
+      "section": "PD",
+      "order": 3
+    },
+    {
+      "key": "tn",
+      "title": "trading name",
+      "section": "BD",
+      "order": 0
+    },
+    {
+      "key": "bt",
+      "title": "business type",
+      "section": "BD",
+      "order": 1
+    },
+    {
+      "key": "bic",
+      "title": "bic",
+      "section": "BD",
+      "order": 2
+    },
+    {
+      "key": "dn",
+      "title": "your domain name",
+      "section": "BD",
+      "order": 3
+    },
+    {
+      "key": "cn",
+      "title": "your contact numbers",
+      "section": "BD",
+      "order": 4
+    },
+    {
+      "key": "ed",
+      "title": "your email address",
+      "section": "BD",
+      "order": 5
+    },
+    {
+      "key": "nzbn",
+      "title": "nzbn",
+      "section": "IN",
+      "order": 0
+    },
+    {
+      "key": "ird",
+      "title": "ird number",
+      "section": "IN",
+      "order": 1
+    },
+    {
+      "key": "acc",
+      "title": "acc number",
+      "section": "IN",
+      "order": 2
+    },
+    {
+      "key": "gst",
+      "title": "gst number",
+      "section": "IN",
+      "order": 3
+    },
+    {
+      "key": "ba",
+      "title": "your bank account",
+      "section": "IN",
+      "order": 4
+    }
+  ]
+}
