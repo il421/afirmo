@@ -19,7 +19,7 @@ export const Logo: FunctionComponent<LogoProps> = ({ logo }) => {
         className="rounded-full"
         alt="company logo"
       />
-      <div className="flex flex-col items-center justify-center gap-3 mt-10">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-3 mt-10">
         <ActionButton
           icon={<FiUpload size={16} />}
           text="upload existing logo"
